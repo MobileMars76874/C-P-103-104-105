@@ -1,0 +1,48 @@
+<!DOCTYPE html>	
+<html>
+<head>
+	<title>Person identification web app</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<div class="container">
+<center>
+<h1>FACE RECOGNITION WEB APP</h1>
+<marquee><h2>The app will identify the following person</h2></marquee>
+<hr>
+<h3>Father</h3>
+<hr>
+<h3>Mother</h3>
+<hr>
+<h3>Me</h3>
+<hr>
+<h3>Webcam view - </h3>
+<br>
+<div id="camera"></div>
+<br>
+<button class="btn btn-primary" onclick="C_I()">Click Image</button>
+<br>
+<br>
+<br>
+<h3>Image</h3>
+<br>
+<div id="output"></div>
+<br>
+<button class="btn btn-primary" onclick="I_I()">Identify Image</button>
+<br>
+<h3>Person: </h3>
+<h3 id="object"></h3>
+</center>
+</div>
+</body>
+<script src="main.js"></script>
+</html>
