@@ -10,7 +10,7 @@ Webcam.attach(camera);
 
 function C_I(){
 Webcam.snap(function(data_URL){
-document.getElementById("I_T_R").innerHTML = "<img id='pic_to_identify' src='"+data_URL+"'>";
+document.getElementById("output").innerHTML = "<img id='pic_to_identify' src='"+data_URL+"'>";
 });
 }
 
